@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEDAN Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .responsive-grid {
+            display: flex;
+            padding: 20px;
+            height: 100vh;
+            align-items: stretch;
+            flex-wrap: wrap;
+
+        }
+
+        .card-sedan {
+            background-color: orangered;
+            width: 33.33%;
+            height: 100vh;
+            border: 2px solid black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+
+        }
+
+        .card-sedan1 {
+            background-color: lightseagreen;
+            width: 33.33%;
+            height: 100vh; 
+            border: 2px solid black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .card-sedan2 {
+            background-color: lightcoral;
+            width: 33.33%;
+            height: 100vh;
+            border: 2px solid black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        img {
+            height: 33.33px;
+            padding-left: 10px;
+            width: 300px;
+            height: 300px;
+            border-radius: 0%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        img:hover {
+            -webkit-transform: scaley(-1);
+            transform: scaley(-1);
+            border-radius: 50%;
+            cursor: pointer;
+            
+
+        }
+
+        .button {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: 500px;
+            border: 0;
+            border-radius: 4px;
+            
+
+        }
+
+        .button:hover {
+            width: 150px;
+            height: 80px;
+            transition-property: width;
+            transition-duration: 5s;
+            transition-delay: 2s;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .h1 {
+            display: flex;
+            justify-content: center;
+            padding: 5%;
+            margin: 3%;
+            background-color: rgb(214, 15, 245);
+            cursor: pointer;
+            color: beige
+
+        }
+
+        .h1:hover {
+            display: flex;
+            align-items: center;
+            width: 150px;
+            height: 100px;
+        }
+
+
+        .h6 {
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 1;
+            font-size: 23px;
+        }
+
+        @media screen and (max-width:1198px) {
+            .card {
+                width: 50%;
+                flex-shrink: 0;
+            }
+        }
+
+        @media screen and (max-width:766px) {
+
+            .card-sedan,
+            .card-sedan1,
+            .card-sedan2 {
+                width: 100%;
+                flex-shrink: 0;
+            }
+        }
+        .card-sedan:hover{
+            background-color: rgb(17, 7, 201);
+            color: aliceblue;
+        }
+        .card-sedan1:hover{
+            background-color: rgb(199, 216, 10);
+            color: aliceblue;
+        }
+        .card-sedan2:hover{
+            background-color: rgb(69, 6, 6);
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="responsive-grid">
+        <div class="card-sedan">
+            <img src="https://i.pinimg.com/originals/e5/86/37/e5863725548e750c121f4ff1171e163d.png" alt="" >
+            <div class="h1">
+                <h1>FALLEN</h1>
+            </div>
+            <div class="h6">
+                <h6>
+                    Choose a sedan for its affordability and excellent fuel economy.
+                    ideal for crusing in the city or on road your next raod trip.
+                </h6>
+            </div>
+            <div class="button">
+                <button>Learn Mode</button>
+            </div>
+        </div>
+
+        <div class="card-sedan1">
+            <img src="https://png.pngtree.com/png-clipart/20200720/original/pngtree-mascot-gaming-logo-esport-with-sniper-illustration-png-image_4611740.jpg"
+                alt="">
+            <div class="h1">
+                <h1>PUBG</h1>
+            </div>
+            <div class="h6">
+                <h6>
+                    Choose a sedan for its affordability and excellent fuel economy.
+                    ideal for crusing in the city or on road your next raod trip.
+                </h6>
+            </div>
+            <div class="button">
+                <button>Learn Mode</button>
+            </div>
+        </div>
+
+
+        <div class="card-sedan2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxAWdJjsfsmyDeylhaRqi49bYwct2Rz7gU7A_X3T6xpDi1qN6nIh8bSsuAAUUdEq4wbk&usqp=CAU"
+                alt="">
+            <div class="h1">
+                <h1>MOOSY</h1>
+            </div>
+            <div class="h6">
+                <h6>
+                    Choose a sedan for its affordability and excellent fuel economy.
+                    ideal for crusing in the city or on road your next raod trip.
+                </h6>
+            </div>
+            <div class="button">
+                <button>Learn Mode</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <h1>Social media App</h1>
+    <div class="container">
+        <div class="left">
+            <form id="form">
+                
+                <div id="msg"></div>
+                <input type="file" name="image" id="filename" >
+                <label for="text">Write your Post here </label>
+                <textarea name="text" id="input" cols="30" rows="3"></textarea>
+                
+                <button type="submit">Post </button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Your Posts here</h3>
+            <div id="posts">
+                <div >
+                    <p>hello</p><br><br>
+                    
+                    <span class="options"> 
+                        <i onClick="editPost(this)"class="fa-solid fa-pen-to-square"></i>
+                        <i onClick="deletePost(this)"class="fa-light fa-trash fa-beat"></i>
+                    </span>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+    
+</script>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Input Attribute</title>
+</head>
+
+<body>
+    <form method="get">
+        <table border="1" width="100%">
+            <tr>
+                <td><label>First Name*</label></td>
+                <td><input name="fname" required="true"></td>
+            </tr>
+            <tr>
+                <td><label>Last Name*</label></td>
+                <td><input name="lname" required="true"></td>
+            </tr>
+            <tr>
+                <td><label>DOB</label></td>
+                <td><input name="DOB" type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Email*</label></td>
+                <td><input type="email" required="true" name="Email" placeholder="Email ID"></td>
+            </tr>
+            <tr>
+                <td><label>Password*</label></td>
+                <td><input type="password" required="true" name="Password" placeholder="Password" pattern="[A-Za-z]{3}" title="Three letter country code"></td>
+            </tr>
+            <tr>
+
+
+                <td><span>Skills</span></td>
+                <td><label><input type="checkbox" name="Skills" value="HTML" checked="true">HTML</label>
+
+                    <br>
+
+                    <label><input type="checkbox" name="Skills" value="CSS">CSS</label>
+
+                    <br>
+
+                    <label><input type="checkbox" name="Skills" value="Javascript">Javascript</label>
+
+                    <br>
+
+                    <label><input type="checkbox" name="Skills" value="React">React</label>
+
+                    <br>
+                </td>
+
+
+            </tr>
+            <tr>
+
+                <td><span>Tech plan</span></td>
+                <td>
+                    <label><input type="radio" name="tech" value="FE">Front End</label>
+                    <br>
+                    <label><input type="radio" name="tech" value="BE">Back End</label>
+                    <br>
+                    <label><input type="radio" name="tech" value="Full Stack">Full Stack</label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label>Profile Pic</label></td>
+                <td><input type="file"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Send">
+        
+
+                </td>
+                
+
+            </tr>
+
+
+
+        </table>
+    </form>
+</body>
+
+</html>

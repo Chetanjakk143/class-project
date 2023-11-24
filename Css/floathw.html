@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        *,
+        *::before,
+        *::after{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aqua;
+            
+        }
+        .container1{
+            background-color: red;
+            border: 1px solid black;
+            height: 150px;
+            color: white;
+        }
+        .container2{
+            background-color: green;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .clear{
+            clear: both ;
+        }
+
+        .clear1 {
+            clear: left;
+        }
+
+        .clear2 {
+            clear: right;
+        }
+        
+        
+        .col-1 {
+            float: left;
+            width: 35%;
+            border: 2px solid black;
+            min-height: 100px;
+            background-color: #ff00ff;
+            color: bisque;
+            
+        }
+
+        .col-2 {
+            float: left;
+            width: 10%;
+            border: 2px solid black;
+            min-height: 100px;
+            background-color: #ff00ff;
+            color: bisque;
+
+        }
+
+        .col-3 {
+            float: left;
+            height: 100px;
+            width: 50%;
+            border: 2px solid black;
+            background-color: #ff00ff;
+            color: bisque;
+        }
+
+        .col-4 {
+            float: left;
+            height: 150px;
+            width: 15%;
+            border: 2px solid black;
+        
+        }
+
+        .col-5 {
+            float: right;
+            width: 40%;
+            border: 2px solid black;
+            min-height: 100px;
+
+        }
+
+        .col-6 {
+            float: right;
+            width: 50%;
+            border: 2px solid black;
+            min-height: 100px;
+
+        }
+
+        .col-7 {
+            float: left;
+            width: 40%;
+            border: 2px solid black;
+            min-height: 100px;
+            background-color: rgb(120, 5, 227);
+            color: bisque;
+
+        }
+
+        .col-8 {
+            float: left;
+            width: 50%;
+            border: 2px solid black;
+            min-height: 100px;
+            background-color: rgb(121, 7, 228);
+            color: bisque;
+        
+        }
+
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-1" align="center">A</div>
+        <div class="col-2" align="center">E</div>
+        <div class="col-2" align="center">E</div>
+        <div class="col-2" align="center">E</div>
+        <div class="col-1" align="center">A</div>
+        <div class="clear"></div>
+    </div>
+    <div class="container">
+        <div class="col-1" align="center">DIV</div>
+        <div class="col-4 container1 " align="center">DIV</div>
+        <div class="col-3" align="center">DIV</div>
+        <div class="col-3" align="center">DIV</div>
+        <div class="clear1"></div>
+    </div>
+    <div class="container2">
+        <div class="col-5" align="center">DIV</div>
+        <div class="col-5" align="center">DIV</div>
+        <div class="col-6" align="center">DIV</div>
+        <div class="col-6" align="center">DIV</div>
+        <div class="clear2"></div>
+    </div>
+    <div class="container">
+        <div class="col-7" align="center">DIV</div>
+        <div class="col-7" align="center">DIV</div>
+        <div class="container col-8" align="center">DIV</div>
+        <div class="container col-8" align="center">DIV</div>
+        <div class="clear"></div>
+    </div>
+
+
+</body>
+</html>

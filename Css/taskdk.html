@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: burlywood;
+            /* height:250px; */
+            width:100;
+            padding: 50px;
+        }
+        
+        .container1{
+            border: 2px solid black;
+            padding: 10px ;
+            text-align: center;
+            width: 50%;
+            background-color: aqua;
+            color: rgb(210, 128, 20);
+        }
+
+        .container2{
+            border: 2px solid black;
+            padding: 10px ;
+            text-align: center;
+            width: 50%;
+            background-color: rgb(7, 239, 204);
+            color:rgb(38, 26, 210);
+            font-size: larger;
+        }
+
+        .container-main{
+            display: flex;
+            width: 100%;
+        }
+
+        .h1{
+            color: rgb(16, 232, 16);
+        }
+
+        .h2{
+            color: rgb(223, 94, 13);
+        }
+
+        .font{
+            font-size: larger;
+        }
+
+        .button{
+            width: 50%;
+            padding: 15px;
+            margin: 50px;
+            background-color: rgb(79, 242, 79);
+            border-radius: 4px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+        }
+
+        .button:hover{
+            transition-property: width;
+            transition-duration: 5s;
+            transition-delay: 2s;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .para{
+            color: black;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="h1">
+            <h1>Join Our Community</h1>
+        </div>
+        <div class="h2">
+            <h2>30-day.husstle free monthly back garantee</h2>
+        </div>
+        <div class="para">
+            <p >Gain access to our full liabrary of tutorials along with expert code reviews.
+                perfect for any developers who are serious about honings their skills</p>
+        </div>
+    </div>
+    <div class="container-main">
+        <div class="container1">
+            <div class="font">
+                <h1>Monthly Subscription</h1>
+                <h1>$29 <span class="span">per month</span></h1>
+                <p class="para">Full access for less than $1 a day</p>
+            </div>
+            <div >
+                <button class="button">Sign Up</button>
+            </div>
+        </div>
+        <div class="container2" >
+            <h1 class="para">Why Us</h1>
+            <p>Tutorials by industy experts</p>
+            <p>Peer & expert code review</p>
+            <p>Coding Excersices</p>
+            <p>Access to GitHub</p>
+            <p>Community Forum</p>
+            <p>Flashcard desk</p>
+            <p>New video Every week</p>
+        </div>
+    </div>
+</body>
+
+</html>

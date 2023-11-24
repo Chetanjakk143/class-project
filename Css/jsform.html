@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selector</title>
+    <style>
+        .display {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            background-color: bisque;
+            border: 2px solid black;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .para {
+            text-align: center;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="display">
+        <form>
+            <input type="text" placeholder="UserName" id="name">
+            <br>
+            <br>
+            <input type="password" placeholder="Password" id="password">
+            <br>
+            <br>
+            <input type="button" value="Click here" id="button">
+        </form>
+    </div> -->
+    <div>
+
+
+        <input type="text" placeholder="Para" id="name">
+        <input type="email" placeholder="Email" id="name2">
+        <p class="para">Hello Broo!!!!!....</p>
+        <img src="./aa.jpg" alt="">
+
+    </div>
+</body>
+
+<!-- <script>
+
+    const name = document.getElementById("name");
+    const pass = document.getElementById("password");
+    const btn = document.getElementById("button");
+
+    console.log(name.attributes.id);
+
+   
+</script> -->
+
+<!-- <script>
+    let val1 = document.getElementsByTagName("input");
+    console.log(val1);
+    console.log(val1[0].type);
+    console.log(val1[1].placeholder);
+    console.log(val1[0].id);
+    val1[0].style.backgroundColor="green"
+    
+</script> -->
+
+<script>
+    let n = 5;
+    let string = "";
+    for(let i = 1; i <= n; i++){
+        for(let j = 1; j<= i; j--){
+            string += "*";
+        }
+        string += "\n";
+    }
+    console.log(string);
+</script>
+
+</html>
